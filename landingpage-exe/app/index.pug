@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include includes/head.pug
+
+    body
+        div(class="container")
+            div(class="wrapper")
+               header(class="header")
+                    div(class="header-panel")
+                        div(class="panel-left")
+                            div(class="panel-left-language")
+                                include includes/language.pug
+                                p(class="panel-left-language-name") English
+                                include includes/arrow.pug
+                            div(class="panel-left-call")
+                                include includes/phone.pug
+                                p(class="panel-left-language-name") +440 875369208
+                            div(class="panel=left-email")
+                                include includes/email.pug
+                                p(class="panel-left-language-name")   info@sitename.com          
+                        div(class="panel-right")
+                            div(class="panel-right-register")
+                                include includes/signIn.pug
+                                p(class="panel-left-language-name") 
+                                    |   Sign In span 
+                                    span(class="delemiter") / 
+                                    |   Register
+                            div(class="panel-right-wishlist")
+                                include includes/wishlist.pug
+                                p(class="panel-left-language-name")
+                                    |   Wishlist: 0
+                                    span(class="wishlist--bold") items
+                            div(class="panel-right-socialNetwork")
+                                ul(class="socialNetwork-list")
+                                    li(class="socialNetwork-list-item")
+                                        a(href="#"  class="social")
+                                            include includes/facebook.pug
+                                    li(class="socialNetwork-list-item")
+                                        a(href="#"  class="social")
+                                            include includes/twitter.pug
+                                    li(class="socialNetwork-list-item")
+                                        a(href="#"  class="social")   
+                                            include includes/tumbln.pug 
+                                    li(class="socialNetwork-list-item")
+                                        a(href="#"  class="social")
+                                            include includes/linkedln.pug
+                                    li(class="socialNetwork-list-item")
+                                        a(href="#"  class="social")
+                                            include includes/googlePlus.pug
+                                    li(class="socialNetwork-list-item")
+                                        a(href="#"  class="social")
+                                            include includes/rss.pug  
+
+                                            
