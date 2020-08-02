@@ -4,7 +4,7 @@ html(lang="en")
         include includes/head.pug
 
     body
-        div(class="container")
+        div(class="container headerPanel-bg")
             div(class="wrapper")
                header(class="header")
                     div(class="header-panel")
@@ -12,25 +12,33 @@ html(lang="en")
                             div(class="panel-left-language")
                                 include includes/language.pug
                                 p(class="panel-left-language-name") English
-                                include includes/arrow.pug
+                                a(href="#" class="arrow")
+                                    include includes/arrow.pug
+                                ul(class="panel-left-language-list")
+                                    li(class="panel-left-language-list-item")
+                                        a( href="#" class="panel-left-language-list-item-link")   English
+                                    li(class="panel-left-language-list-item")
+                                        a( href="#" class="panel-left-language-list-item-link")   Russian
                             div(class="panel-left-call")
                                 include includes/phone.pug
-                                p(class="panel-left-language-name") +440 875369208
-                            div(class="panel=left-email")
+                                p(class="panel-left-call-name") +440 875369208
+                            div(class="panel-left-email")
                                 include includes/email.pug
-                                p(class="panel-left-language-name")   info@sitename.com          
+                                p(class="panel-left-email-name")   info@sitename.com
                         div(class="panel-right")
                             div(class="panel-right-register")
                                 include includes/signIn.pug
-                                p(class="panel-left-language-name") 
-                                    |   Sign In span 
-                                    span(class="delemiter") / 
-                                    |   Register
-                            div(class="panel-right-wishlist")
+                                p(class="panel-right-register-name")
+                                    a( href="#" class="panel-right-register-name-singIn") Sign In span
+                                    span(class="delemiter") &nbsp;/&nbsp;
+                                    a(href="#" class="panel-right-register-name-reg") Register
+                            div(class="panel-right-wishList")
                                 include includes/wishlist.pug
-                                p(class="panel-left-language-name")
-                                    |   Wishlist: 0
-                                    span(class="wishlist--bold") items
+                                p(class="panel-right-wishList")
+                                    |   Wishlist:&nbsp;
+                                    span(class="panel-right-wishList--bold") 0 items
+                                    include includes/arrow.pug
+
                             div(class="panel-right-socialNetwork")
                                 ul(class="socialNetwork-list")
                                     li(class="socialNetwork-list-item")
@@ -50,6 +58,54 @@ html(lang="en")
                                             include includes/googlePlus.pug
                                     li(class="socialNetwork-list-item")
                                         a(href="#"  class="social")
-                                            include includes/rss.pug  
+                                            include includes/rss.pug
 
-                                            
+        div(class="container headerNav-bg")
+            div(class="wrapper")
+                    div(class="nav-panel")
+                        div(class="nav-panel-left")
+                            a(href="#" class="nav-panel-left-logo")  èxe
+                        div(class="nav-panel-right")
+                            ul(class="nav-panel-right-nav")
+                                li(class="nav-panel-right-nav-item")
+                                    a(href="index.html" class="nav-panel-right-nav-item-link")   Home
+                                li(class="nav-panel-right-nav-item")
+                                    a(href="#" class="nav-panel-right-nav-item-link")   About Us
+                                li(class="nav-panel-right-nav-item")
+                                    a(href="#" class="nav-panel-right-nav-item-link")   Pages
+                                li(class="nav-panel-right-nav-item")
+                                    a(href="#" class="nav-panel-right-nav-item-link")   Features
+                                li(class="nav-panel-right-nav-item")
+                                    a(href="#" class="nav-panel-right-nav-item-link")   Portfolio
+                                li(class="nav-panel-right-nav-item")
+                                    a(href="#" class="nav-panel-right-nav-item-link")   Blog
+                                li(class="nav-panel-right-nav-item")
+                                    a(href="#" class="nav-panel-right-nav-item-link")  Shop
+                                li(class="nav-panel-right-nav-item")
+                                    a(href="#" class="nav-panel-right-nav-item-link")  Contacts
+                            div(class="nav-panel-right-cart")
+                                a(href="#" class="nav-panel-right-cart-link")
+                                    include includes/cart.pug
+                                    span(class="nav-panel-right-cart-count") 0
+                            div(class="nav-panel-right-search")
+                                a(href="#" class="nav-panel-right-search-link")
+                                    include includes/search.pug
+
+        div(class="container ")
+                 div(class="slider swiper-container")
+                     div(class="slider-wrap swiper-wrapper")
+
+                        include  includes/slide.pug
+                        include  includes/slide.pug
+                        include  includes/slide.pug
+                        include  includes/slide.pug
+                        include  includes/slide.pug
+
+                     div( class="slider-line swiper-pagination-line")
+                     div( class="swiper-pagination")
+                     div( class="slider-arrLeft swiper-button-prev")
+                     div( class="slider-arrRight swiper-button-next")
+
+        script( src="https://unpkg.com/swiper/swiper-bundle.js")
+        script( src="https://unpkg.com/swiper/swiper-bundle.min.js")
+        script(src="js/common.js")
