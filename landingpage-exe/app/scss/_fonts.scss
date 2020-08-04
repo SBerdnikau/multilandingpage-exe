@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Light'), local('Raleway-Light'),
+  url('../fonts/Raleway-Light.woff2') format('woff2'),
+  url('../fonts/Raleway-Light.woff') format('woff'),
+  url('../fonts/Raleway-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Extra Bold'), local('Raleway-Extra-Bold'),
+  url('../fonts/Raleway-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Raleway-ExtraBold.woff') format('woff'),
+  url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Bold'), local('Raleway-Bold'),
+  url('../fonts/Raleway-Bold.woff2') format('woff2'),
+  url('../fonts/Raleway-Bold.woff') format('woff'),
+  url('../fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Axis';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Axis'), url('../fonts/axis.woff') format('woff');
+  src: local('Axis'), url('../fonts/axis.otf') format('otf');
+}

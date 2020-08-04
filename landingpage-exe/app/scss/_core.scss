@@ -4,7 +4,7 @@
  **/
 html {
 	font-size: 18px;
-	color: $white;
+	//color: $white;
 }
 
 body {
@@ -13,4 +13,15 @@ body {
 	word-wrap: break-word;
 	overflow-x: hidden;
 	box-sizing: border-box;
+}
+
+.container{
+	min-width: 100%;
+}
+
+.wrapper{
+	max-width: 1200px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin:  0 auto;
 }
