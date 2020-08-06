@@ -106,38 +106,97 @@ html(lang="en")
                      div( class="slider-arrLeft swiper-button-prev")
                      div( class="slider-arrRight swiper-button-next")
 
-        div(class="container about-container")
-            div(class="wrapper")
-                ul(class="about")
-                    li(class="about-item")
-                        div(class="about-item-img")
-                            div(class="about-item-img-figure")
+        div(class="container about")
+            div(class="wrapper about-wrap")
+                ul(class="about-list ")
+                    li(class="about-list-item")
+                        div(class="about-list-item-img")
+                            div(class="about-list-item-img-figure")
                                 include includes/design.pug
-                        h3(class="about-item-title")    Clean Design
-                        p(class="about-item-description")     
-                            |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.   
-                    li(class="about-item")
-                        div(class="about-item-img")
-                            div(class="about-item-img-figure")
-                                include includes/branding.pug
-                        h3(class="about-item-title")    Branding
-                        p(class="about-item-description")     
-                            |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.  
-                    li(class="about-item")
-                        div(class="about-item-img")
-                            div(class="about-item-img-figure")
-                                include includes/responsive.pug
-                        h3(class="about-item-title")    Responsive
-                        p(class="about-item-description")     
-                            |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.  
-                    li(class="about-item")
-                        div(class="about-item-img")
-                            div(class="about-item-img-figure")
-                                include includes/development.pug
-                        h3(class="about-item-title")    Development
-                        p(class="about-item-description")     
+                        h3(class="about-list-item-title")    Clean Design
+                        p(class="about-list-item-description")     
                             |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.
-                        div(class="about-item-underLine")
+                        div(class="about-line")       
+                    li(class="about-list-item")
+                        div(class="about-list-item-img")
+                            div(class="about-list-item-img-figure")
+                                include includes/branding.pug
+                        h3(class="about-list-item-title")    Branding
+                        p(class="about-list-item-description")     
+                            |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.
+                        div(class="about-line")       
+                    li(class="about-list-item")
+                        div(class="about-list-item-img")
+                            div(class="about-list-item-img-figure")
+                                include includes/responsive.pug
+                        h3(class="about-list-item-title")    Responsive
+                        p(class="about-list-item-description")     
+                            |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.  
+                        div(class="about-line")     
+                    li(class="about-list-item")
+                        div(class="about-list-item-item-img")
+                            div(class="about-list-item-img-figure")
+                                include includes/development.pug
+                        h3(class="about-list-item-title")    Development
+                        p(class="about-list-item-description")     
+                            |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.
+                        div(class="about-line")
+
+        div(class="container works")
+            div(class="wrapper works-wrap")
+                ul(class="works-list")
+                    li(class="works-list-item works--one")
+                        h2(class="works-list-item-title")   See Our Recent Work
+                        p(class="works-list-item-description")  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam processus dynamicus.
+                    li(class="works-list-item works--two")
+                        div(class="works-active")
+                            h2(class="works-active-title") Claritas Est Processus
+                            p(class="works-active-description") Graphic Designer, Photoshop
+                            div(class="works-active-buttons")
+                                span(class="works-active-buttons-search")
+                                    include includes/search-work.pug
+                                span(class="works-active-buttons-link")
+                                    include includes/link.pug
+                    li(class="works-list-item works--three")
+                        div(class="works-active")
+                            h2(class="works-active-title") Claritas Est Processus
+                            p(class="works-active-description") Graphic Designer, Photoshop
+                            div(class="works-active-buttons")
+                                span(class="works-active-buttons-search")
+                                    include includes/search-work.pug
+                                span(class="works-active-buttons-link")
+                                    include includes/link.pug
+                    li(class="works-list-item works--four")
+                        div(class="works-active")
+                            h2(class="works-active-title") Claritas Est Processus
+                            p(class="works-active-description") Graphic Designer, Photoshop
+                            div(class="works-active-buttons")
+                                span(class="works-active-buttons-search")
+                                    include includes/search-work.pug
+                                span(class="works-active-buttons-link")
+                                    include includes/link.pug
+                    li(class="works-list-item works--five")
+                        div(class="works-active")
+                            h2(class="works-active-title") Claritas Est Processus
+                            p(class="works-active-description") Graphic Designer, Photoshop
+                            div(class="works-active-buttons")
+                                span(class="works-active-buttons-search")
+                                    include includes/search-work.pug
+                                span(class="works-active-buttons-link")
+                                    include includes/link.pug
+                    li(class="works-list-item works--six")
+                        div(class="works-active")
+                            h2(class="works-active-title") Claritas Est Processus
+                            p(class="works-active-description") Graphic Designer, Photoshop
+                            div(class="works-active-buttons")
+                                span(class="works-active-buttons-search")
+                                    include includes/search-work.pug
+                                span(class="works-active-buttons-link")
+                                    include includes/link.pug
+
+                a(href="#" class="works-viewAllPortfolio") View All Portfolio »
+
+
 
 
         script( src="https://unpkg.com/swiper/swiper-bundle.js")

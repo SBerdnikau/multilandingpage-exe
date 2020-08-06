@@ -460,24 +460,25 @@
     }
 }
 
-
 .about{
-    padding-top: 80px;
-    &-container{
-        margin: 0;
-        padding: 0;
-        background: #252525;
+    margin: 0;
+    padding: 0;
+    background: #252525;
+    &-wrap{    
     }
-
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-
     &-icon{
         object-fit: contain;
         fill: #636363;
         transition: fill 0.1s  ease ;
     }  
+   
+}
+
+.about-list{
+    padding: 80px 0 0 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 
     &-item{
         margin-right: 38px;
@@ -486,7 +487,6 @@
         }
 
         &-img{
-
             &-figure{
                 display: flex;
                 justify-content: center;
@@ -528,6 +528,210 @@
             letter-spacing: normal;
             text-align: left;
             color: #555555;
+            &::after{
+                content: '';
+                display: block;
+                width: 70px;
+                height: 2px;
+                background-color: $tomato;
+                margin-top: 30px;
+                margin-bottom: 80px;
+            }
         }
     }
 }
+
+
+
+.works{
+    padding-top: 80px;
+    background: #202020; 
+    &-wrap{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &-icon{
+        width: 15px;
+        height: 15px;
+        fill: $white;
+
+    }
+    &-active{
+        position: absolute;
+        top: 0;
+        outline: 5px solid $tomato;
+        &-title{
+            margin: 0 0 20px 0;
+            min-width: 312px;
+            text-transform: uppercase;
+            font-family: "Raleway-Bold", sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+        &-description{
+            min-width: 189px;
+            text-transform: uppercase;
+            font-family: "Roboto-Regular", sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            text-align: left;
+            color: #959595;
+            &::after{
+                content: '';
+                display: block;
+                margin: 28px 0 69px 0;
+                max-width: 70px;
+                min-height: 2px;
+                background-color: $tomato;
+            }
+        }
+        &-buttons{
+            display: flex;
+            justify-content: flex-end;
+            &:last-child{
+                margin-right: 0;
+            }
+            &-search, &-link{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 42px;
+                height: 42px;
+                margin-right: 8px;
+                border-radius: 50%;
+                background-color: #252525;
+                &:hover{
+                    background-color: $tomato
+                }
+            }
+            
+        }
+    }
+    &--one{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    &--two{
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        position: relative;
+        background: url("../img/work/work-1.jpg") no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        .works-active{
+            padding: 30px 130px;
+        }
+    }
+    &--three{
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        position: relative;
+        background: url("../img/work/work-2.jpg") no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        &:hover{
+            
+        }
+    }
+    &--four{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        position: relative;
+        background: url("../img/work/work-3.jpg") no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        .works-active{
+            padding: 30px 20px;
+        }
+    }
+    &--five{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        position: relative;
+        background: url("../img/work/work-4.jpg") no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        .works-active{
+            padding: 30px 50px;
+        }
+    }
+    &--six{
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+        position: relative;
+        background: url("../img/work/work-5.jpg") no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        .works-active{
+            padding: 30px 50px;
+        }
+    }
+  
+
+    &-viewAllPortfolio{
+        display: inline-block;
+        margin-top: 60px;
+        margin-bottom: 90px;
+        font-family: "Roboto-Regular",sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: $tomato;
+        text-decoration: none;
+        &:hover{
+            color: $white;
+        }
+    }
+}
+
+.works-list{
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(2, 270px);
+    grid-template-columns: 300px 435px 165px 270px;
+    
+    &-item{
+        &-title{
+            max-width: 240px;
+            font-family: "Raleway-Bold", sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.93;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+        &-description{
+            width: 262px;
+            font-family: "Roboto-Regular", sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: left;
+            color: #464646;
+        }
+    }
+}
+
