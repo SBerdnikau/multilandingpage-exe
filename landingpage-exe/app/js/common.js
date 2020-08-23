@@ -10,19 +10,10 @@ arrow.addEventListener("click", (e) => {
 
 
  // Initialize Swiper
-// const muSwiper = new Swiper('.swiper-container', {
-//     pagination: {
-//         el: '.swiper-pagination-line',
-//         type: 'progressbar'
-//     },
-// });
-
-
- const sefaultSwiper = new Swiper('.swiper-container', {
+ const defaultSwiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
-    type: 'bullets',
-   // clickable: true
+    type: 'bullets'
    },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -34,4 +25,15 @@ arrow.addEventListener("click", (e) => {
  },
   speed: 400,
   spaceBetween: 0
+});
+
+const clientsSlider = new Swiper('.clients-slider', {
+    navigation: {
+        nextEl: '.clients-slider-prev',
+        prevEl: '.clients-slider-next',
+    },
+    speed: 400,
+    spaceBetween: 65,
+    width: 148,
+
 });

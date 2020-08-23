@@ -92,7 +92,7 @@ html(lang="en")
                                     include includes/search.pug
 
         div(class="container ")
-                 div(class="slider swiper-container")
+                 div(class="slide-container swiper-container")
                      div(class="slider-wrap swiper-wrapper")
 
                         include  includes/slide.pug
@@ -103,8 +103,8 @@ html(lang="en")
 
                      div( class="slider-line swiper-pagination-line")
                      div( class="swiper-pagination")
-                     div( class="slider-arrLeft swiper-button-prev")
-                     div( class="slider-arrRight swiper-button-next")
+                     div( class="slider-prev swiper-button-prev")
+                     div( class="slider-next swiper-button-next")
 
         div(class="container about")
             div(class="wrapper about-wrap")
@@ -333,6 +333,24 @@ html(lang="en")
                 a(href="#" class="blogPost-readAll") Read All Posts »
 
 
+        div(class="container clients")
+            div(class="wrapper clients-wrap")
+                h2(class="clients-title")   Our Happy Clients
+                p(class="clients-description")
+                    |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    |   tincidunt ut laoreet. Claritas est etiam processus dynamicus.
+                div(class="clients-slider swiper-container")
+                    div(class="clients-slider-wrap swiper-wrapper")
+                        img(class="clients-slider-slide swiper-slide" src="./img/brand/01.png" alt="client")
+                        img(class="clients-slider-slide swiper-slide" src="./img/brand/02.png" alt="client")
+                        img(class="clients-slider-slide swiper-slide" src="./img/brand/03.png" alt="client")
+                        img(class="clients-slider-slide swiper-slide" src="./img/brand/04.png" alt="client")
+                        img(class="clients-slider-slide swiper-slide" src="./img/brand/05.png" alt="client")
+
+
+                    div(class="clients-slider-prev swiper-button-prev")
+                    div(class="clients-slider-next swiper-button-next")
+
 
         div(class="container projects")
             div(class="wrapper projects-wrap")
@@ -341,6 +359,158 @@ html(lang="en")
                     p(class="projects-info-description") Don't Forget to rate the Template. Thanks so much!
                 div(class="projects-button")
                     a(href="#" class="projects-button-btnBuy") Buy This Now
+
+        footer(class="container footer")
+            div(class="wrapper footer-wrap")
+                div(class="footer-about")
+                    h2(class="footer-about-title") About Us
+                    p(class="footer-about-description")
+                        |   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        |   tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                        |
+                    a(href="#" class="footer-about-linkMore") Read More »
+                    h2(class="footer-about-subTitle") Email Newsletters:
+                    form(action="#"  class="footer-about-email")
+                        input(type="email" class="footer-about-email-panel" placeholder="Email Address")
+                        button(type="submit" class="footer-about-email-button")
+                            include includes/emailList.pug
+                    a(href="#" class="footer-about-linkPolicy") Privacy Policy
+
+                div(class="footer-news")
+                    h2(class="footer-news-title") Latest News
+                    ul(class="footer-news-list")
+                        li(class="footer-news-list-item")
+                            a(href="#" class="footer-news-list-item-link")
+                                div(class="footer-news-list-item-link-left")
+                                    div(class="footer-news-list-item-link-left-date")
+                                        h2(class="footer-news-list-item-link-left-date-number") 04
+                                        p(class="footer-news-list-item-link-left-date-month") Feb
+                                div(class="footer-news-list-item-link-right")
+                                    p(class="footer-news-list-item-link-right-description")
+                                        | Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                                    p(class="footer-news-list-item-link-right-comments")
+                                        span(class="footer-news-list-item-link-right-comments--colorGreen") 26
+                                        |   Comments
+
+                        li(class="footer-news-list-item")
+                            a(href="#" class="footer-news-list-item-link")
+                                div(class="footer-news-list-item-link-left")
+                                    div(class="footer-news-list-item-link-left-date")
+                                        h2(class="footer-news-list-item-link-left-date-number") 28
+                                        p(class="footer-news-list-item-link-left-date-month") Jan
+                                div(class="footer-news-list-item-link-right")
+                                    p(class="footer-news-list-item-link-right-description")
+                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                    p(class="footer-news-list-item-link-right-comments")
+                                        span(class="footer-news-list-item-link-right-comments--colorGray") NO
+                                        |   Comments
+
+                        li(class="footer-news-list-item")
+                            a(href="#" class="footer-news-list-item-link")
+                                div(class="footer-news-list-item-link-left")
+                                    div(class="footer-news-list-item-link-left-date")
+                                        h2(class="footer-news-list-item-link-left-date-number") 03
+                                        p(class="footer-news-list-item-link-left-date-month") Jan
+                                div(class="footer-news-list-item-link-right")
+                                    p(class="footer-news-list-item-link-right-description")
+                                        | Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                                        |   anteposuerit litterarum formas humanitatis
+                                    p(class="footer-news-list-item-link-right-comments")
+                                        span(class="footer-news-list-item-link-right-comments--colorGreen") 3
+                                        |   Comments
+
+                div(class="footer-address")
+                   h2(class="footer-address-title") Get In Touch
+                   ul(class="footer-address-list")
+                       li(class="footer-address-list-item")
+                           div(class="footer-address-list-item-left")
+                               p(class="footer-address-list-item-left-name") Address:
+                           div(class="footer-address-list-item-right")
+                               p(class="footer-address-list-item-right-info")
+                                | 795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia
+
+                       li(class="footer-address-list-item")
+                           div(class="footer-address-list-item-left")
+                               p(class="footer-address-list-item-left-name") Phone:
+                           div(class="footer-address-list-item-right")
+                               p(class="footer-address-list-item-right-info")
+                                   | +440 875369208
+                                   span(class="footer-address-list-item-right-info--colorGray") &nbsp;- Office
+                               p(class="footer-address-list-item-right-info")
+                                   | +440 353363114
+                                   span(class="footer-address-list-item-right-info--colorGray") &nbsp;- Fax
+
+                       li(class="footer-address-list-item")
+                           div(class="footer-address-list-item-left")
+                               p(class="footer-address-list-item-left-name") Email:
+                           div(class="footer-address-list-item-right")
+                               a(href="#" class="footer-address-list-item-right-email")
+                                   | support@sitename.com
+                               a(href="#" class="footer-address-list-item-right-email")
+                                   | info@sitename.com
+
+                       li(class="footer-address-list-item")
+                           div(class="footer-address-list-item-left")
+                               p(class="footer-address-list-item-left-name") Follow Us:
+                           div(class="footer-address-list-item-right")
+                               ul(class="footer-address-list-item-right-sublist")
+                                   li(class="footer-address-list-item-right-sublist-subitem")
+                                        a(class="footer-address-list-item-right-sublist-subitem-link")
+                                            include includes/facebook.pug
+                                   li(class="footer-address-list-item-right-sublist-subitem")
+                                       a(href="#" class="footer-address-list-item-right-sublist-subitem-link")
+                                           include includes/twitter.pug
+                                   li(class="footer-address-list-item-right-sublist-subitem")
+                                       a(href="#" class="footer-address-list-item-right-sublist-subitem-link")
+                                           include includes/tumbln.pug
+                                   li(class="footer-address-list-item-right-sublist-subitem")
+                                       a(href="#" class="footer-address-list-item-right-sublist-subitem-link")
+                                           include includes/linkedln.pug
+                                   li(class="footer-address-list-item-right-sublist-subitem")
+                                       a(href="#" class="footer-address-list-item-right-sublist-subitem-link")
+                                           include includes/googlePlus.pug
+                                   li(class="footer-address-list-item-right-sublist-subitem")
+                                       a(href="#" class="footer-address-list-item-right-sublist-subitem-link")
+                                           include includes/vimeo.pug
+                                   li(class="footer-address-list-item-right-sublist-subitem")
+                                       a(href="#" class="footer-address-list-item-right-sublist-subitem-link")
+                                           include includes/pinkterest.pug
+                                   li(class="footer-address-list-item-right-sublist-subitem")
+                                       a(href="#" class="footer-address-list-item-right-sublist-subitem-link")
+                                           include includes/flickr.pug
+                                   li(class="footer-address-list-item-right-sublist-subitem")
+                                       a(href="#" class="footer-address-list-item-right-sublist-subitem-link")
+                                           include includes/rss.pug
+
+
+        div(class="container copyright")
+            div(class="wrapper copyright-wrap")
+                div(class="copyright-left")
+                    p(class="copyright-left-info")
+                        | &copy; 2015 èxe, Design by
+                        span(class="copyright-left-info--colorWhite") &nbsp; ThemeFire
+                        | &nbsp; /   Only for
+                        span(class="copyright-left-info--colorWhite") &nbsp; Envato Market
+
+                div(class="copyright-right")
+                    ul(class="copyright-right-nav")
+                        li(class="copyright-right-nav-item")
+                            a(href="#" class="copyright-right-nav-item-link") Home
+                        li(class="copyright-right-nav-item")
+                            a(href="#" class="copyright-right-nav-item-link")  About Us
+                        li(class="copyright-right-nav-item")
+                            a(href="#" class="copyright-right-nav-item-link")   Pages
+                        li(class="copyright-right-nav-item")
+                            a(href="#" class="copyright-right-nav-item-link") Features
+                        li(class="copyright-right-nav-item")
+                            a(href="#" class="copyright-right-nav-item-link") Portfolio
+                        li(class="copyright-right-nav-item")
+                            a(href="#" class="copyright-right-nav-item-link")  Blog
+                        li(class="copyright-right-nav-item")
+                            a(href="#" class="copyright-right-nav-item-link")  Shop
+                        li(class="copyright-right-nav-item")
+                            a(href="#" class="copyright-right-nav-item-link") Contact Us
+
 
         script( src="https://unpkg.com/swiper/swiper-bundle.js")
         script( src="https://unpkg.com/swiper/swiper-bundle.min.js")
